@@ -103,10 +103,6 @@ export function EnrollmentManagementPage() {
     const course = courses.find((c) => c.id === klass.course_id);
     return course ? `${course.code} - ${course.title}` : `Class ${classId}`;
   };
-  const studentLabel = (id: number) => {
-    const s = students.find((s) => s.id === id);
-    return s ? `${s.first_name} ${s.last_name}` : `Student ${id}`;
-  };
 
     return (
     <div>

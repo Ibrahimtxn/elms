@@ -1,7 +1,5 @@
-import { FormEvent, useState } from "react";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import { GraduationCap } from "lucide-react";
-
 import { useAuth } from "@/auth/AuthContext";
 import { StudentSearch } from "@/components/StudentSearch";
 import { LecturerSearch } from "@/components/LecturerSearch";

@@ -4,7 +4,6 @@ import { ShieldCheck } from "lucide-react";
 
 import { useAuth } from "@/auth/AuthContext";
 import { getApiErrorMessage } from "@/api/client";
-import { FormField } from "@/components/FormField";
 import { ErrorState } from "@/components/ErrorState";
 
 export function AdminLoginPage() {

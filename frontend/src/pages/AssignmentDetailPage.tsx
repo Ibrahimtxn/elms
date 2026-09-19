@@ -92,16 +92,6 @@ export function AssignmentDetailPage() {
   if (loading) return <LoadingState label="Loading assignment…" />;
   if (error) return <ErrorState message={error} onRetry={load} />;
 
-  const statusLabel = (status: Submission["status"]) => {
-    const map: Record<Submission["status"], string> = {
-      submitted: "Submitted",
-      late: "Submitted (Late)",
-      graded: "Graded",
-      returned: "Returned",
-    };
-    return map[status];
-  };
-
    return (
     <div>
       <BackLink label="Back to Class" />
